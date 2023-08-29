@@ -189,7 +189,7 @@ end
 
 
 
-local repo = "https://gitee.com/wrk226/SFS/raw/master/LinoriaLibUI/";
+local repo = "https://raw.githubusercontent.com/skyark88/sf5/LinoriaLibUI/";
 local Library = loadstring(game:HttpGet(repo .. "Library.lua"))();
 local SaveManager = loadstring(game:HttpGet(repo .. "addons/SaveManager.lua"))();
 SaveManager:SetFolder("SFSConfiguration");
@@ -267,7 +267,7 @@ Dungeon:AddSlider("EasyRoom", {Text="层数",Default=30,Min=0,Max=50,Rounding=0,
 Dungeon:AddToggle("AutoHard", {Text="自动困难地牢",Default=false,Tooltip="自动困难地牢"});
 Dungeon:AddSlider("HardRoom", {Text="层数",Default=30,Min=0,Max=50,Rounding=0,Compact=false});
 Dungeon:AddToggle("AutoInsane", {Text="自动炼狱地牢",Default=false,Tooltip="自动炼狱地牢"});
-Dungeon:AddSlider("InsaneRoom", {Text="层数",Default=30,Min=0,Max=96,Rounding=0,Compact=false});
+Dungeon:AddSlider("InsaneRoom", {Text="层数",Default=30,Min=0,Max=160,Rounding=0,Compact=false});
 Dungeon:AddSlider("WaitTime", {Text="等待时间",Default=0,Min=0,Max=1,Rounding=2,Compact=false});
 --Dungeon:AddInput("UseDamageRooms", {Default="0",Numeric=true,Finished=false,Text="困难地牢自动使用攻击药的层数",Tooltip="困难地牢自动使用攻击药的层数",Placeholder="Placeholder text"});
 Dungeon:AddInput("UseInsaneBoostRooms", {Default="0",Numeric=true,Finished=false,Text="炼狱地牢自动吃药的层数",Tooltip="炼狱地牢自动吃药的层数",Placeholder="Placeholder text"});
